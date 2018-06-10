@@ -1,4 +1,4 @@
-package com.example.bot.spring.;
+package com.example.bot.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
