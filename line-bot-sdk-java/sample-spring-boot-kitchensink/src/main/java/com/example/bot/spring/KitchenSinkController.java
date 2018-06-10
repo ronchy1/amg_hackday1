@@ -192,6 +192,8 @@ public class KitchenSinkController {
         reply(replyToken, Collections.singletonList(message));
     }
 
+    public
+
     private void reply(@NonNull String replyToken, @NonNull List<Message> messages) {
         try {
             BotApiResponse apiResponse = lineMessagingClient
@@ -262,6 +264,10 @@ public class KitchenSinkController {
                     this.replyText(replyToken, "Bot can't use profile API without user ID");
                 }
                 break;
+            }
+            case "report": {
+                String msg = "This fund is growth really fast!!!! http://47.52.202.223:81/documents/061009571649.html";
+                this.replyText(replyToken, msg);
             }
             case "bye": {
                 Source source = event.getSource();
@@ -461,9 +467,4 @@ public class KitchenSinkController {
                 createUri("/downloaded/" + tempFile.getFileName()));
     }
 
-    @Value
-    public static class DownloadedContent {
-        Path path;
-        String uri;
-    }
 }
