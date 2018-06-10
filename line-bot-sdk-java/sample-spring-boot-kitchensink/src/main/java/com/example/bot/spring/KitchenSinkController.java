@@ -192,8 +192,6 @@ public class KitchenSinkController {
         reply(replyToken, Collections.singletonList(message));
     }
 
-    public
-
     private void reply(@NonNull String replyToken, @NonNull List<Message> messages) {
         try {
             BotApiResponse apiResponse = lineMessagingClient
@@ -268,6 +266,7 @@ public class KitchenSinkController {
             case "report": {
                 String msg = "This fund is growth really fast!!!! http://47.52.202.223:81/documents/061009571649.html";
                 this.replyText(replyToken, msg);
+                break;
             }
             case "bye": {
                 Source source = event.getSource();
