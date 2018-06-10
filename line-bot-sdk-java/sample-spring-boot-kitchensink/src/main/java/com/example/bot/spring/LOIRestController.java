@@ -17,13 +17,11 @@ public class LOIRestController {
 
     private ClientHttpRequestFactory factory;
 
-    @Autowired
     public void setFactory() {
         SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
         this.factory = factory;
     }
 
-    @Autowired
     public void setRestTemplate(){
         this.restTemplate = new RestTemplate(this.factory);
     }
