@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/loiLineApp-*.jar --server.port=$PORT
+web: java $JAVA_OPTS -jar target/loiLineApp-*.jar --server.port=18087
