@@ -466,4 +466,9 @@ public class KitchenSinkController {
                 createUri("/downloaded/" + tempFile.getFileName()));
     }
 
+    @Value
+    public static class DownloadedContent {
+        Path path;
+        String uri;
+    }
 }
